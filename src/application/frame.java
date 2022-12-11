@@ -1,5 +1,7 @@
 package application;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -7,6 +9,12 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 public class frame {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
 
     @FXML
     private Button ResButton1;
@@ -21,29 +29,58 @@ public class frame {
     private Button ResButton4;
 
     @FXML
+    private Circle ava1;
+
+    @FXML
+    private Circle ava2;
+
+    @FXML
+    private Circle ava3;
+
+    @FXML
+    private Circle ava4;
+
+    @FXML
     void reserved1(ActionEvent event) {
         ResButton1.setText("Reserved");
         ava1.setFill(Color.rgb(255,0,0));
 
     }
-
+    
     @FXML
     void reserved2(ActionEvent event) {
         ResButton2.setText("Reserved");
+        ava2.setFill(Color.rgb(255,0,0));
 
     }
 
     @FXML
     void reserved3(ActionEvent event) {
         ResButton3.setText("Reserved");
+        ava3.setFill(Color.rgb(255,0,0));
     }
 
     @FXML
     void reserved4(ActionEvent event) {
         ResButton4.setText("Reserved");
+        ava4.setFill(Color.rgb(255,0,0));
     }
 
+    
+
     @FXML
-    private Circle ava1;
+    void initialize() {
+        assert ResButton1 != null : "fx:id=\"ResButton1\" was not injected: check your FXML file 'frame.fxml'.";
+        assert ResButton2 != null : "fx:id=\"ResButton2\" was not injected: check your FXML file 'frame.fxml'.";
+        assert ResButton3 != null : "fx:id=\"ResButton3\" was not injected: check your FXML file 'frame.fxml'.";
+        assert ResButton4 != null : "fx:id=\"ResButton4\" was not injected: check your FXML file 'frame.fxml'.";
+        assert ava1 != null : "fx:id=\"ava1\" was not injected: check your FXML file 'frame.fxml'.";
+        assert ava2 != null : "fx:id=\"ava2\" was not injected: check your FXML file 'frame.fxml'.";
+        assert ava3 != null : "fx:id=\"ava3\" was not injected: check your FXML file 'frame.fxml'.";
+        assert ava4 != null : "fx:id=\"ava4\" was not injected: check your FXML file 'frame.fxml'.";
+
+    }
 
 }
+
+

@@ -162,7 +162,7 @@
                   <Label alignment="CENTER" layoutX="-3.0" layoutY="86.0" prefHeight="17.0" prefWidth="174.0" text="Space : 2" />
                   <Label layoutY="119.0" prefHeight="17.0" prefWidth="158.0" text="Available" />
                   <Circle fx:id="ava2" fill="#1fff2c" layoutX="70.0" layoutY="128.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Button fx:id="ResButton2" layoutX="93.0" layoutY="116.0" mnemonicParsing="false" onAction="#reserved2" text="RESERVE">
+                  <Button fx:id="ResButton2" layoutX="93.0" layoutY="117.0" mnemonicParsing="false" onAction="#reserved2" text="RESERVE">
                      <font>
                         <Font size="12.0" />
                      </font>
