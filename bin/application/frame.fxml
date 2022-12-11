@@ -47,7 +47,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<fx:root prefHeight="400.0" prefWidth="640.0" type="VBox" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.frame">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.frame">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -179,4 +179,4 @@
         </panes>
       </Accordion>
   </children>
-</fx:root>
+</VBox>
