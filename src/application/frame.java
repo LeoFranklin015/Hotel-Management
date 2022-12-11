@@ -3,6 +3,8 @@ package application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 
 public class frame {
 
@@ -21,6 +23,7 @@ public class frame {
     @FXML
     void reserved1(ActionEvent event) {
         ResButton1.setText("Reserved");
+        ava1.setFill(Color.rgb(255,0,0));
 
     }
 
@@ -39,5 +42,8 @@ public class frame {
     void reserved4(ActionEvent event) {
         ResButton4.setText("Reserved");
     }
+
+    @FXML
+    private Circle ava1;
 
 }
