@@ -5,7 +5,15 @@
     "version": "0.2.0",
     "configurations": [
 
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "application.App",
+            "projectName": "hotel_management_f3fe7f47",
+            "vmArgs": "--module-path src/application/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml"
 
+        },
         {
             "type": "java",
             "name": "Launch App",
@@ -15,19 +23,5 @@
             "vmArgs": "--module-path /Users/leofranklin/Downloads/javafx-sdk-19/lib/ --add-modules javafx.controls,javafx.fxml"
 
         },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "hotel_management_f3fe7f47",
-            "vmArgs": "--module-path /Users/leofranklin/Downloads/javafx-sdk-19/lib/ --add-modules javafx.controls,javafx.fxml"
-        }
     ]
 }

@@ -3,6 +3,6 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "/Users/leofranklin/Downloads/javafx-sdk-19/lib/**/*.jar"
+        "src/application/javafx-sdk-19/lib/**/*.jar"
     ]
 }
