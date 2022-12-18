@@ -11,22 +11,25 @@ public class App extends Application{
   
     @Override  
     public void start(Stage primaryStage)  {  
-        try {
+        try
+        {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("frame.fxml"));
-            try{
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
+            try
+            {
+                Parent root = fxmlLoader.load();
+                Scene scene = new Scene(root);
+                primaryStage.setScene(scene);
             }
             catch(NullPointerException e1)
             {
-                System.out.println("ERROR");
-            }
-            
+                System.out.println("Error");
+            }  
             primaryStage.setTitle("Hotel Management");
             primaryStage.show();
 
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
         }
 
