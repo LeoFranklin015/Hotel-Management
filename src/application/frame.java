@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -27,6 +28,9 @@ public class frame {
 
     @FXML
     private Button ResButton4;
+
+    @FXML
+    private Button m1;
 
     @FXML
     void reserved1(ActionEvent e) {
@@ -53,7 +57,11 @@ public class frame {
         ava4.setFill(Color.rgb(255,0,0));
     }
 
-    
+    @FXML
+    void men(ActionEvent e)
+    {
+  
+    }
 
     @FXML
     void initialize() {
