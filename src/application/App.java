@@ -14,7 +14,7 @@ public class App extends Application{
     public void start(Stage primaryStage)  {  
         try
         {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("bill.fxml"));
             try
             {
                 Parent root = fxmlLoader.load();

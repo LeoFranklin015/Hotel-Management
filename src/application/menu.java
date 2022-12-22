@@ -86,85 +86,109 @@ public class menu {
 
     @FXML
     private Text t8;
-
+    int q1 =0;
     @FXML
     void add1(ActionEvent event) {
-
+        q1++;
+        t1.setText(Integer.toString(q1));
     }
-
+    int q2 =0;
     @FXML
     void add2(ActionEvent event) {
-
+        q2++;
+        t2.setText(Integer.toString(q2));
     }
-
+    int q3 =0;
     @FXML
     void add3(ActionEvent event) {
-
+        q3++;
+        t3.setText(Integer.toString(q3));
     }
-
+    int q4 =0;
     @FXML
     void add4(ActionEvent event) {
-
+        q4++;
+        t4.setText(Integer.toString(q4));
     }
-
+    int q5 =0;
     @FXML
     void add5(ActionEvent event) {
-
+        q5++;
+        t5.setText(Integer.toString(q5));
     }
-
+    int q6 =0;
     @FXML
     void add6(ActionEvent event) {
-
+        q6++;
+        t6.setText(Integer.toString(q6));
     }
-
+    int q7 =0;
     @FXML
     void add7(ActionEvent event) {
-
+        q7++;
+        t7.setText(Integer.toString(q7));
     }
-
+    int q8 =0;
     @FXML
     void add8(ActionEvent event) {
-
+        q8++;
+        t8.setText(Integer.toString(q8));
     }
 
     @FXML
     void sub1(ActionEvent event) {
-
+        if(q1>0)
+        q1--;
+        t1.setText(Integer.toString(q1));
     }
 
     @FXML
     void sub2(ActionEvent event) {
-
+        if(q2>0)
+        q2--;
+        t2.setText(Integer.toString(q2));
     }
 
     @FXML
     void sub3(ActionEvent event) {
-
+        if(q3>0)
+        q3--;
+        t3.setText(Integer.toString(q3));
     }
 
     @FXML
     void sub4(ActionEvent event) {
-
+        if(q4>0)
+        q4--;
+        t4.setText(Integer.toString(q4));
     }
 
     @FXML
     void sub5(ActionEvent event) {
-
+        if(q5>0)
+        q5--;
+        t5.setText(Integer.toString(q5));
     }
 
     @FXML
     void sub6(ActionEvent event) {
-
+        if(q6>0)
+        q6--;
+        t6.setText(Integer.toString(q6));
     }
 
     @FXML
     void sub7(ActionEvent event) {
-
+        if(q7>0)
+        q7--;
+        t7.setText(Integer.toString(q7));
     }
 
     @FXML
     void sub8(ActionEvent event) {
-
+        if(q8>0)
+        q8--;
+        t8.setText(Integer.toString(q8));
     }
 
     @FXML
