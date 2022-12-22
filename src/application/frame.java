@@ -69,6 +69,9 @@ public class frame {
     }
 
     @FXML
+    private Circle ava1;
+    
+    @FXML
     private Circle ava2;
 
     @FXML
