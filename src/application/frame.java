@@ -29,39 +29,26 @@ public class frame {
     private Button ResButton4;
 
     @FXML
-    private Circle ava1;
-
-    @FXML
-    private Circle ava2;
-
-    @FXML
-    private Circle ava3;
-
-    @FXML
-    private Circle ava4;
-
-    @FXML
-    void reserved1(ActionEvent event) {
+    void reserved1(ActionEvent e) {
         ResButton1.setText("Reserved");
         ava1.setFill(Color.rgb(255,0,0));
 
     }
     
     @FXML
-    void reserved2(ActionEvent event) {
+    void reserved2(ActionEvent e) {
         ResButton2.setText("Reserved");
         ava2.setFill(Color.rgb(255,0,0));
-
     }
 
     @FXML
-    void reserved3(ActionEvent event) {
+    void reserved3(ActionEvent e) {
         ResButton3.setText("Reserved");
         ava3.setFill(Color.rgb(255,0,0));
     }
 
     @FXML
-    void reserved4(ActionEvent event) {
+    void reserved4(ActionEvent e) {
         ResButton4.setText("Reserved");
         ava4.setFill(Color.rgb(255,0,0));
     }
@@ -80,6 +67,15 @@ public class frame {
         assert ava4 != null : "fx:id=\"ava4\" was not injected: check your FXML file 'frame.fxml'.";
 
     }
+
+    @FXML
+    private Circle ava2;
+
+    @FXML
+    private Circle ava3;
+
+    @FXML
+    private Circle ava4;
 
 }
 
