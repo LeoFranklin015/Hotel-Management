@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.text.Text;
 
-public class bill extends menu{
+public class bill {
 
     @FXML
     private ResourceBundle resources;
@@ -84,7 +84,7 @@ public class bill extends menu{
     private Text ta;
     void add()
     {
-        qty1.setText(Integer.toString(q1));
+        // qty1.setText(Integer.toString(t1));
     }
 
 

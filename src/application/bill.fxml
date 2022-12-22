@@ -45,7 +45,7 @@
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="70.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="388.0" fitWidth="286.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../Downloads/images.jpg" />
+            <Image url="@images.jpg" />
          </image>
       </ImageView>
       <Label contentDisplay="BOTTOM" layoutX="9.0" layoutY="321.0" text="---Thank you for visiting us ---" textAlignment="CENTER" textFill="WHITE">

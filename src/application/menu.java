@@ -86,49 +86,58 @@ public class menu {
 
     @FXML
     private Text t8;
-    int q1 =0;
+
+    int q1 = 0;
+
     @FXML
     void add1(ActionEvent event) {
         q1++;
         t1.setText(Integer.toString(q1));
     }
-    int q2 =0;
+
+    int q2 = 0;
     @FXML
     void add2(ActionEvent event) {
         q2++;
         t2.setText(Integer.toString(q2));
     }
-    int q3 =0;
+
+    int q3 = 0;
     @FXML
     void add3(ActionEvent event) {
         q3++;
         t3.setText(Integer.toString(q3));
     }
-    int q4 =0;
+
+    int q4 = 0;
     @FXML
     void add4(ActionEvent event) {
         q4++;
         t4.setText(Integer.toString(q4));
     }
-    int q5 =0;
+
+    int q5 = 0;
     @FXML
     void add5(ActionEvent event) {
         q5++;
         t5.setText(Integer.toString(q5));
     }
-    int q6 =0;
+
+    int q6 = 0;
     @FXML
     void add6(ActionEvent event) {
         q6++;
         t6.setText(Integer.toString(q6));
     }
-    int q7 =0;
+
+    int q7 = 0;
     @FXML
     void add7(ActionEvent event) {
         q7++;
         t7.setText(Integer.toString(q7));
     }
-    int q8 =0;
+
+    int q8 = 0;
     @FXML
     void add8(ActionEvent event) {
         q8++;

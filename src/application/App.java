@@ -14,22 +14,23 @@ public class App extends Application{
     public void start(Stage primaryStage)  {  
         try
         {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("bill.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("menu.fxml"));
+            System.out.println(getClass().getResource("menu.fxml"));
             try
             {
                 Parent root = fxmlLoader.load();
                 Scene scene = new Scene(root);
                 primaryStage.setScene(scene);
             }
-            catch(NullPointerException e1)
+            catch(NullPointerException e)
             {
                 System.out.println("Error");
-            }  
+            }
             primaryStage.setTitle("Hotel Management");
             primaryStage.show();
 
         }
-        catch (Exception e)
+        catch(Exception e)
         {
             e.printStackTrace();
         }
