@@ -1,6 +1,10 @@
 package application;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -227,6 +231,23 @@ public class menu {
         assert t7 != null : "fx:id=\"t7\" was not injected: check your FXML file 'menu.fxml'.";
         assert t8 != null : "fx:id=\"t8\" was not injected: check your FXML file 'menu.fxml'.";
 
+    }
+
+    @FXML
+    void checkStatus()
+    {
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="select status from hotel where id=1";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
 }

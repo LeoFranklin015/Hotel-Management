@@ -90,11 +90,12 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="2.0" prefHeight="17.0" prefWidth="640.0" text="MENU" textFill="#7b803c">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-29.0" layoutY="13.0" prefHeight="60.0" prefWidth="349.0" text="MENU" textFill="#7b803c">
                <font>
                   <Font name="Impact" size="48.0" />
                </font>
             </Label>
+            <Button layoutX="443.0" layoutY="30.0" mnemonicParsing="false" onAction="#checkStatus" text="Check Table Status" />
       </children>
     </AnchorPane>
       <GridPane prefHeight="290.0" prefWidth="623.0">
