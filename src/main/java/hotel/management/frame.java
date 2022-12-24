@@ -1,7 +1,9 @@
 package hotel.management;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -33,6 +35,15 @@ public class frame {
     private Button m1;
 
     @FXML
+    private Button m2;
+
+    @FXML
+    private Button m3;
+
+    @FXML
+    private Button m4;
+
+    @FXML
     void reserved1(ActionEvent e) {
         ResButton1.setText("Reserved");
         ava1.setFill(Color.rgb(255,0,0));
@@ -58,10 +69,29 @@ public class frame {
     }
 
     @FXML
-    void men(ActionEvent e)
+    void menu1(ActionEvent e) throws IOException
     {
-  
+        App.setRoot("menu");
     }
+
+    @FXML
+    void menu2(ActionEvent e) throws IOException
+    {
+        App.setRoot("menu");
+    }
+
+    @FXML
+    void menu3(ActionEvent e) throws IOException
+    {
+        App.setRoot("menu");
+    }
+
+    @FXML
+    void menu4(ActionEvent e) throws IOException
+    {
+        App.setRoot("menu");
+    }
+
 
     @FXML
     void initialize() {

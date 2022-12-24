@@ -1,5 +1,6 @@
 package hotel.management;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
@@ -521,6 +522,12 @@ public class menu {
         }
     }
 
+
+    @FXML
+    void backToFrame(ActionEvent e) throws IOException
+    {
+        App.setRoot("frame");
+    }
 
     @FXML
     void initialize() {
