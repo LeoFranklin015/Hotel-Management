@@ -1,14 +1,12 @@
 package hotel.management;
 
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 
 public class menu {
@@ -42,6 +40,54 @@ public class menu {
 
     @FXML
     private Button a8;
+
+    @FXML
+    private Label i1;
+
+    @FXML
+    private Label i2;
+
+    @FXML
+    private Label i3;
+
+    @FXML
+    private Label i4;
+
+    @FXML
+    private Label i5;
+
+    @FXML
+    private Label i6;
+
+    @FXML
+    private Label i7;
+
+    @FXML
+    private Label i8;
+
+    @FXML
+    private Label p1;
+
+    @FXML
+    private Label p2;
+
+    @FXML
+    private Label p3;
+
+    @FXML
+    private Label p4;
+
+    @FXML
+    private Label p5;
+
+    @FXML
+    private Label p6;
+
+    @FXML
+    private Label p7;
+
+    @FXML
+    private Label p8;
 
     @FXML
     private Button s1;
@@ -95,57 +141,227 @@ public class menu {
 
     @FXML
     void add1(ActionEvent event) {
-        q1++;
-        t1.setText(Integer.toString(q1));
+        try 
+        {
+            q1++;
+            t1.setText(Integer.toString(q1));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q1+" where id=1";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     int q2 = 0;
     @FXML
     void add2(ActionEvent event) {
-        q2++;
-        t2.setText(Integer.toString(q2));
+        try 
+        {
+            q2++;
+            t2.setText(Integer.toString(q2));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q2+" where id=2";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     int q3 = 0;
     @FXML
     void add3(ActionEvent event) {
-        q3++;
-        t3.setText(Integer.toString(q3));
+        try 
+        {
+            q3++;
+            t3.setText(Integer.toString(q3));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q3+" where id=3";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     int q4 = 0;
     @FXML
     void add4(ActionEvent event) {
-        q4++;
-        t4.setText(Integer.toString(q4));
+        try 
+        {
+            q4++;
+            t4.setText(Integer.toString(q4));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q4+" where id=4";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     int q5 = 0;
     @FXML
     void add5(ActionEvent event) {
-        q5++;
-        t5.setText(Integer.toString(q5));
+        try 
+        {
+            q5++;
+            t5.setText(Integer.toString(q5));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q5+" where id=5";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     int q6 = 0;
     @FXML
     void add6(ActionEvent event) {
-        q6++;
-        t6.setText(Integer.toString(q6));
+        try 
+        {
+            q6++;
+            t6.setText(Integer.toString(q6));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q6+" where id=6";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     int q7 = 0;
     @FXML
     void add7(ActionEvent event) {
-        q7++;
-        t7.setText(Integer.toString(q7));
+        try 
+        {
+            q7++;
+            t7.setText(Integer.toString(q7));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q7+" where id=7";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     int q8 = 0;
     @FXML
     void add8(ActionEvent event) {
-        q8++;
-        t8.setText(Integer.toString(q8));
+        try 
+        {
+            q8++;
+            t8.setText(Integer.toString(q8));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="update menu set quantity="+q8+" where id=8";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void checkStatus(ActionEvent event) {
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			String sql="select status from menu where id=1";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            q1 = rs.getInt("status");
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void fetchMenu() {
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+            String sql="select * from menu";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            i1.setText(rs.getString(2));
+            p1.setText(rs.getString(3));
+            q1 = Integer.parseInt(rs.getString(4));
+            t1.setText(Integer.toString(q1));
+            rs.next();
+            i2.setText(rs.getString(2));
+            p2.setText(rs.getString(3));
+            q2 = Integer.parseInt(rs.getString(4));
+            t2.setText(Integer.toString(q2));
+            rs.next();
+            i3.setText(rs.getString(2));
+            p3.setText(rs.getString(3));
+            q3 = Integer.parseInt(rs.getString(4));
+            t3.setText(Integer.toString(q3));
+            rs.next();
+            i4.setText(rs.getString(2));
+            p4.setText(rs.getString(3));
+            q4 = Integer.parseInt(rs.getString(4));
+            t4.setText(Integer.toString(q4));
+            rs.next();
+            i5.setText(rs.getString(2));
+            p5.setText(rs.getString(3));
+            q5 = Integer.parseInt(rs.getString(4));
+            t5.setText(Integer.toString(q5));
+            rs.next();
+            i6.setText(rs.getString(2));
+            p6.setText(rs.getString(3));
+            q6 = Integer.parseInt(rs.getString(4));
+            t6.setText(Integer.toString(q6));
+            rs.next();
+            i7.setText(rs.getString(2));
+            p7.setText(rs.getString(3));
+            q7 = Integer.parseInt(rs.getString(4));
+            t7.setText(Integer.toString(q7));
+            rs.next();
+            i8.setText(rs.getString(2));
+            p8.setText(rs.getString(3));
+            q8 = Integer.parseInt(rs.getString(4));
+            t8.setText(Integer.toString(q8));
+            rs.next();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -204,6 +420,7 @@ public class menu {
         t8.setText(Integer.toString(q8));
     }
 
+
     @FXML
     void initialize() {
         assert a1 != null : "fx:id=\"a1\" was not injected: check your FXML file 'menu.fxml'.";
@@ -214,6 +431,22 @@ public class menu {
         assert a6 != null : "fx:id=\"a6\" was not injected: check your FXML file 'menu.fxml'.";
         assert a7 != null : "fx:id=\"a7\" was not injected: check your FXML file 'menu.fxml'.";
         assert a8 != null : "fx:id=\"a8\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i1 != null : "fx:id=\"i1\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i2 != null : "fx:id=\"i2\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i3 != null : "fx:id=\"i3\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i4 != null : "fx:id=\"i4\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i5 != null : "fx:id=\"i5\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i6 != null : "fx:id=\"i6\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i7 != null : "fx:id=\"i7\" was not injected: check your FXML file 'menu.fxml'.";
+        assert i8 != null : "fx:id=\"i8\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p1 != null : "fx:id=\"p1\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p2 != null : "fx:id=\"p2\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p3 != null : "fx:id=\"p3\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p4 != null : "fx:id=\"p4\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p5 != null : "fx:id=\"p5\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p6 != null : "fx:id=\"p6\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p7 != null : "fx:id=\"p7\" was not injected: check your FXML file 'menu.fxml'.";
+        assert p8 != null : "fx:id=\"p8\" was not injected: check your FXML file 'menu.fxml'.";
         assert s1 != null : "fx:id=\"s1\" was not injected: check your FXML file 'menu.fxml'.";
         assert s2 != null : "fx:id=\"s2\" was not injected: check your FXML file 'menu.fxml'.";
         assert s3 != null : "fx:id=\"s3\" was not injected: check your FXML file 'menu.fxml'.";
@@ -233,22 +466,5 @@ public class menu {
 
     }
 
-    @FXML
-    void checkStatus()
-    {
-        try
-        {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
-			String sql="select status from hotel where id=1";
-			PreparedStatement ps = con.prepareStatement(sql);
-            ResultSet rs = ps.executeQuery();
-            q1 = rs.getInt("status");
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
-
 }
+

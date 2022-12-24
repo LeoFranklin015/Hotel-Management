@@ -95,7 +95,8 @@
                   <Font name="Impact" size="48.0" />
                </font>
             </Label>
-            <Button layoutX="443.0" layoutY="30.0" mnemonicParsing="false" onAction="#checkStatus" text="Check Table Status" />
+            <Button layoutX="484.0" layoutY="31.0" mnemonicParsing="false" onAction="#checkStatus" text="Check Table Status" />
+            <Button layoutX="355.0" layoutY="31.0" mnemonicParsing="false" onAction="#fetchMenu" text="Fetch Menu" />
       </children>
     </AnchorPane>
       <GridPane prefHeight="290.0" prefWidth="623.0">
@@ -131,22 +132,22 @@
                   <Font name="American Typewriter" size="13.0" />
                </font></Label>
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="57.0" text="REMOVE" GridPane.columnIndex="3" />
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="410.0" text="Chicken Pizza" GridPane.rowIndex="1" />
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="409.0" text="Pasta" GridPane.rowIndex="2" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="416.0" text="Naan (Chicken Butter Masala)" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="461.0" text="Grill Chicken(Full)" GridPane.rowIndex="4" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="378.0" text="Lasagna" GridPane.rowIndex="5" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="436.0" text="Chicken Biryani" GridPane.rowIndex="6" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="411.0" text="Chicken Friedrice" GridPane.rowIndex="7" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="433.0" text="Momos(12 pcs) with Coke" GridPane.rowIndex="8" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="183.0" text="200" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="194.0" text="250" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="255.0" text="170" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="184.0" text="400" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="197.0" text="350" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="206.0" text="250" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="218.0" text="150" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Label alignment="CENTER" prefHeight="17.0" prefWidth="177.0" text="300" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="i1" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="410.0" GridPane.rowIndex="1" />
+            <Label fx:id="i2" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="409.0" GridPane.rowIndex="2" />
+            <Label fx:id="i3" alignment="CENTER" prefHeight="17.0" prefWidth="416.0" GridPane.rowIndex="3" />
+            <Label fx:id="i4" alignment="CENTER" prefHeight="17.0" prefWidth="461.0" GridPane.rowIndex="4" />
+            <Label fx:id="i5" alignment="CENTER" prefHeight="17.0" prefWidth="378.0" GridPane.rowIndex="5" />
+            <Label fx:id="i6" alignment="CENTER" prefHeight="17.0" prefWidth="436.0" GridPane.rowIndex="6" />
+            <Label fx:id="i7" alignment="CENTER" prefHeight="17.0" prefWidth="411.0" GridPane.rowIndex="7" />
+            <Label fx:id="i8" alignment="CENTER" prefHeight="17.0" prefWidth="433.0" GridPane.rowIndex="8" />
+            <Label fx:id="p1" alignment="CENTER" prefHeight="17.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="p2" alignment="CENTER" prefHeight="17.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="p3" alignment="CENTER" prefHeight="17.0" prefWidth="255.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="p4" alignment="CENTER" prefHeight="17.0" prefWidth="184.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="p5" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="p6" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="p7" alignment="CENTER" prefHeight="17.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="p8" alignment="CENTER" prefHeight="17.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <Button fx:id="a1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#add1" prefHeight="26.0" prefWidth="47.0" text="+" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <Button fx:id="a2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#add2" prefHeight="26.0" prefWidth="47.0" text="+" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Button fx:id="a3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#add3" prefHeight="26.0" prefWidth="47.0" text="+" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="3" />
@@ -164,14 +165,14 @@
             <Button fx:id="s7" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sub7" prefHeight="26.0" prefWidth="47.0" text="-" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="7" />
             <Button fx:id="s8" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sub8" prefHeight="26.0" prefWidth="47.0" text="-" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="8" />
             <Label alignment="CENTER" prefHeight="17.0" prefWidth="64.0" text="Quantity" textAlignment="CENTER" GridPane.columnIndex="4" />
-            <Text fx:id="t1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Text fx:id="t2" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Text fx:id="t3" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Text fx:id="t4" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Text fx:id="t5" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Text fx:id="t6" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Text fx:id="t7" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Text fx:id="t8" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Text fx:id="t1" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Text fx:id="t2" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Text fx:id="t3" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Text fx:id="t4" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Text fx:id="t5" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Text fx:id="t6" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Text fx:id="t7" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Text fx:id="t8" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="71.21630859375" GridPane.columnIndex="4" GridPane.rowIndex="8" />
          </children>
          <opaqueInsets>
             <Insets />
