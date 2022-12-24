@@ -3,6 +3,8 @@ package hotel.management;
 import java.net.URL;
 import java.sql.*;
 import java.util.ResourceBundle;
+
+import io.github.cdimascio.dotenv.Dotenv;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -10,6 +12,9 @@ import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 
 public class menu {
+
+    Dotenv dotenv = Dotenv.load();
+    final String passwd = dotenv.get("PASSWD");
 
     @FXML
     private ResourceBundle resources;
@@ -146,7 +151,7 @@ public class menu {
             q1++;
             t1.setText(Integer.toString(q1));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q1+" where id=1";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -165,7 +170,7 @@ public class menu {
             q2++;
             t2.setText(Integer.toString(q2));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q2+" where id=2";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -184,7 +189,7 @@ public class menu {
             q3++;
             t3.setText(Integer.toString(q3));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q3+" where id=3";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -203,7 +208,7 @@ public class menu {
             q4++;
             t4.setText(Integer.toString(q4));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q4+" where id=4";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -222,7 +227,7 @@ public class menu {
             q5++;
             t5.setText(Integer.toString(q5));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q5+" where id=5";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -241,7 +246,7 @@ public class menu {
             q6++;
             t6.setText(Integer.toString(q6));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q6+" where id=6";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -260,7 +265,7 @@ public class menu {
             q7++;
             t7.setText(Integer.toString(q7));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q7+" where id=7";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -279,7 +284,7 @@ public class menu {
             q8++;
             t8.setText(Integer.toString(q8));
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="update menu set quantity="+q8+" where id=8";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
@@ -295,7 +300,7 @@ public class menu {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
 			String sql="select status from menu where id=1";
 			PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
@@ -312,7 +317,7 @@ public class menu {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
             String sql="select * from menu";
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
