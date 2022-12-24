@@ -371,58 +371,154 @@ public class menu {
 
     @FXML
     void sub1(ActionEvent event) {
-        if(q1>0)
-        q1--;
-        t1.setText(Integer.toString(q1));
+        try
+        {
+            if(q1>0)
+                q1--;
+            t1.setText(Integer.toString(q1));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q1+" where id=1";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void sub2(ActionEvent event) {
-        if(q2>0)
-        q2--;
-        t2.setText(Integer.toString(q2));
+        try
+        {
+            if(q2>0)
+                q2--;
+            t2.setText(Integer.toString(q2));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q2+" where id=2";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void sub3(ActionEvent event) {
-        if(q3>0)
-        q3--;
-        t3.setText(Integer.toString(q3));
+        try
+        {
+            if(q3>0)
+                q3--;
+            t3.setText(Integer.toString(q3));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q3+" where id=3";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void sub4(ActionEvent event) {
-        if(q4>0)
-        q4--;
-        t4.setText(Integer.toString(q4));
+        try
+        {
+            if(q4>0)
+                q4--;
+            t4.setText(Integer.toString(q4));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q4+" where id=4";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void sub5(ActionEvent event) {
-        if(q5>0)
-        q5--;
-        t5.setText(Integer.toString(q5));
+        try
+        {
+            if(q5>0)
+                q5--;
+            t5.setText(Integer.toString(q5));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q5+" where id=5";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void sub6(ActionEvent event) {
-        if(q6>0)
-        q6--;
-        t6.setText(Integer.toString(q6));
+        try
+        {
+            if(q6>0)
+                q6--;
+            t6.setText(Integer.toString(q6));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q6+" where id=6";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void sub7(ActionEvent event) {
-        if(q7>0)
-        q7--;
-        t7.setText(Integer.toString(q7));
+        try
+        {
+            if(q7>0)
+                q7--;
+            t7.setText(Integer.toString(q7));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q7+" where id=7";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void sub8(ActionEvent event) {
-        if(q8>0)
-        q8--;
-        t8.setText(Integer.toString(q8));
+        try
+        {
+            if(q8>0)
+                q8--;
+            t8.setText(Integer.toString(q8));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+			String sql="update menu set quantity="+q8+" where id=8";
+			PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
 
