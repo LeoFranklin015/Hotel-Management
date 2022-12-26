@@ -45,51 +45,56 @@ public class frame {
 
     @FXML
     void reserved1(ActionEvent e) {
-        ResButton1.setText("Reserved");
+        ResButton1.setVisible(false);
         ava1.setFill(Color.rgb(255,0,0));
+        m1.setVisible(true);
 
     }
     
     @FXML
     void reserved2(ActionEvent e) {
-        ResButton2.setText("Reserved");
+        ResButton2.setVisible(false);
         ava2.setFill(Color.rgb(255,0,0));
+        m2.setVisible(true);
     }
 
     @FXML
     void reserved3(ActionEvent e) {
-        ResButton3.setText("Reserved");
+        ResButton3.setVisible(false);
         ava3.setFill(Color.rgb(255,0,0));
+        m3.setVisible(true);
     }
 
     @FXML
     void reserved4(ActionEvent e) {
-        ResButton4.setText("Reserved");
+        ResButton4.setVisible(false);
         ava4.setFill(Color.rgb(255,0,0));
+        m4.setVisible(true);
     }
 
     @FXML
     void menu1(ActionEvent e) throws IOException
     {
-        App.setRoot("menu");
+        App.setRoot("menu1");
+
     }
 
     @FXML
     void menu2(ActionEvent e) throws IOException
     {
-        App.setRoot("menu");
+        App.setRoot("menu2");
     }
 
     @FXML
     void menu3(ActionEvent e) throws IOException
     {
-        App.setRoot("menu");
+        App.setRoot("menu3");
     }
 
     @FXML
     void menu4(ActionEvent e) throws IOException
     {
-        App.setRoot("menu");
+        App.setRoot("menu4");
     }
 
 

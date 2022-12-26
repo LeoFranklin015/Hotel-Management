@@ -12,7 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.text.Text;
 
-public class menu {
+public class menu3 {
 
     Dotenv dotenv = Dotenv.load();
     final String passwd = dotenv.get("PASSWD");
