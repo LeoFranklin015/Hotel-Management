@@ -153,7 +153,7 @@ public class menu1 {
             t1.setText(Integer.toString(q1));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q1+" where id=1";
+			String sql="update menu1 set quantity="+q1+" where id=1";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -172,7 +172,7 @@ public class menu1 {
             t2.setText(Integer.toString(q2));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q2+" where id=2";
+			String sql="update menu1 set quantity="+q2+" where id=2";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -191,7 +191,7 @@ public class menu1 {
             t3.setText(Integer.toString(q3));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q3+" where id=3";
+			String sql="update menu1 set quantity="+q3+" where id=3";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -210,7 +210,7 @@ public class menu1 {
             t4.setText(Integer.toString(q4));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q4+" where id=4";
+			String sql="update menu1 set quantity="+q4+" where id=4";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -229,7 +229,7 @@ public class menu1 {
             t5.setText(Integer.toString(q5));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q5+" where id=5";
+			String sql="update menu1 set quantity="+q5+" where id=5";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -248,7 +248,7 @@ public class menu1 {
             t6.setText(Integer.toString(q6));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q6+" where id=6";
+			String sql="update menu1 set quantity="+q6+" where id=6";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -267,7 +267,7 @@ public class menu1 {
             t7.setText(Integer.toString(q7));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q7+" where id=7";
+			String sql="update menu1 set quantity="+q7+" where id=7";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -286,7 +286,7 @@ public class menu1 {
             t8.setText(Integer.toString(q8));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q8+" where id=8";
+			String sql="update menu1 set quantity="+q8+" where id=8";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -302,7 +302,7 @@ public class menu1 {
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="select status from menu where id=1";
+			String sql="select status from menu1 where id=1";
 			PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             q1 = rs.getInt("status");
@@ -319,7 +319,7 @@ public class menu1 {
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-            String sql="select * from menu";
+            String sql="select * from menu1";
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             rs.next();
@@ -379,7 +379,7 @@ public class menu1 {
             t1.setText(Integer.toString(q1));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q1+" where id=1";
+			String sql="update menu1 set quantity="+q1+" where id=1";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -398,7 +398,7 @@ public class menu1 {
             t2.setText(Integer.toString(q2));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q2+" where id=2";
+			String sql="update menu1 set quantity="+q2+" where id=2";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -417,7 +417,7 @@ public class menu1 {
             t3.setText(Integer.toString(q3));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q3+" where id=3";
+			String sql="update menu1 set quantity="+q3+" where id=3";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -436,7 +436,7 @@ public class menu1 {
             t4.setText(Integer.toString(q4));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q4+" where id=4";
+			String sql="update menu1 set quantity="+q4+" where id=4";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -455,7 +455,7 @@ public class menu1 {
             t5.setText(Integer.toString(q5));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q5+" where id=5";
+			String sql="update menu1 set quantity="+q5+" where id=5";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -474,7 +474,7 @@ public class menu1 {
             t6.setText(Integer.toString(q6));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q6+" where id=6";
+			String sql="update menu1 set quantity="+q6+" where id=6";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -493,7 +493,7 @@ public class menu1 {
             t7.setText(Integer.toString(q7));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q7+" where id=7";
+			String sql="update menu1 set quantity="+q7+" where id=7";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }
@@ -512,7 +512,7 @@ public class menu1 {
             t8.setText(Integer.toString(q8));
             Class.forName("com.mysql.cj.jdbc.Driver");
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="update menu set quantity="+q8+" where id=8";
+			String sql="update menu1 set quantity="+q8+" where id=8";
 			PreparedStatement ps = con.prepareStatement(sql);
             ps.executeUpdate();
         }

@@ -16,13 +16,13 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `menu`
+-- Table structure for table `menu2`
 --
 
-DROP TABLE IF EXISTS `menu`;
+DROP TABLE IF EXISTS `menu2`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `menu` (
+CREATE TABLE `menu2` (
   `id` bigint NOT NULL,
   `name` varchar(50) NOT NULL,
   `price` bigint NOT NULL,
@@ -32,13 +32,13 @@ CREATE TABLE `menu` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `menu`
+-- Dumping data for table `menu2`
 --
 
-LOCK TABLES `menu` WRITE;
-/*!40000 ALTER TABLE `menu` DISABLE KEYS */;
-INSERT INTO `menu` VALUES (1,'Chicken Pizza',200,3),(2,'Pasta',250,5),(3,'Naan(Chicken Butter Masala)',170,3),(4,'Grill Chicken (Full)',400,3),(5,'Lasagna',350,1),(6,'Chicken Briyani',250,2),(7,'Chicken Fried Rice',100,1),(8,'Momos(12 pcs) with Coke',300,1);
-/*!40000 ALTER TABLE `menu` ENABLE KEYS */;
+LOCK TABLES `menu2` WRITE;
+/*!40000 ALTER TABLE `menu2` DISABLE KEYS */;
+INSERT INTO `menu2` VALUES (1,'Chicken Pizza',200,0),(2,'Pasta',250,0),(3,'Naan(Chicken Butter Masala)',170,0),(4,'Grill Chicken (Full)',400,0),(5,'Lasagna',350,0),(6,'Chicken Briyani',250,0),(7,'Chicken Fried Rice',100,0),(8,'Momos(12 pcs) with Coke',300,0);
+/*!40000 ALTER TABLE `menu2` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-24 10:46:53
+-- Dump completed on 2022-12-26 10:28:27
