@@ -95,7 +95,7 @@
                   <Font name="Impact" size="48.0" />
                </font>
             </Label>
-            <Button layoutX="495.0" layoutY="56.0" mnemonicParsing="false" onAction="#checkStatus" text="Check Table Status" />
+            <Button layoutX="522.0" layoutY="59.0" mnemonicParsing="false" onAction="#fetchBill" text="Fetch Bill" />
             <Button layoutX="514.0" layoutY="8.0" mnemonicParsing="false" onAction="#fetchMenu" text="Fetch Menu" />
             <Button layoutX="27.0" layoutY="30.0" mnemonicParsing="false" onAction="#backToFrame" text="Return" />
       </children>

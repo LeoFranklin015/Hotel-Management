@@ -297,20 +297,8 @@ public class menu1 {
     }
 
     @FXML
-    void checkStatus(ActionEvent event) {
-        try
-        {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="select status from menu1 where id=1";
-			PreparedStatement ps = con.prepareStatement(sql);
-            ResultSet rs = ps.executeQuery();
-            q1 = rs.getInt("status");
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
+    void fetchBill(ActionEvent event) throws IOException {
+        App.setRoot("bill1");
     }
 
     @FXML
@@ -531,46 +519,46 @@ public class menu1 {
 
     @FXML
     void initialize() {
-        assert a1 != null : "fx:id=\"a1\" was not injected: check your FXML file 'menu.fxml'.";
-        assert a2 != null : "fx:id=\"a2\" was not injected: check your FXML file 'menu.fxml'.";
-        assert a3 != null : "fx:id=\"a3\" was not injected: check your FXML file 'menu.fxml'.";
-        assert a4 != null : "fx:id=\"a4\" was not injected: check your FXML file 'menu.fxml'.";
-        assert a5 != null : "fx:id=\"a5\" was not injected: check your FXML file 'menu.fxml'.";
-        assert a6 != null : "fx:id=\"a6\" was not injected: check your FXML file 'menu.fxml'.";
-        assert a7 != null : "fx:id=\"a7\" was not injected: check your FXML file 'menu.fxml'.";
-        assert a8 != null : "fx:id=\"a8\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i1 != null : "fx:id=\"i1\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i2 != null : "fx:id=\"i2\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i3 != null : "fx:id=\"i3\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i4 != null : "fx:id=\"i4\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i5 != null : "fx:id=\"i5\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i6 != null : "fx:id=\"i6\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i7 != null : "fx:id=\"i7\" was not injected: check your FXML file 'menu.fxml'.";
-        assert i8 != null : "fx:id=\"i8\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p1 != null : "fx:id=\"p1\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p2 != null : "fx:id=\"p2\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p3 != null : "fx:id=\"p3\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p4 != null : "fx:id=\"p4\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p5 != null : "fx:id=\"p5\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p6 != null : "fx:id=\"p6\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p7 != null : "fx:id=\"p7\" was not injected: check your FXML file 'menu.fxml'.";
-        assert p8 != null : "fx:id=\"p8\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s1 != null : "fx:id=\"s1\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s2 != null : "fx:id=\"s2\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s3 != null : "fx:id=\"s3\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s4 != null : "fx:id=\"s4\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s5 != null : "fx:id=\"s5\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s6 != null : "fx:id=\"s6\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s7 != null : "fx:id=\"s7\" was not injected: check your FXML file 'menu.fxml'.";
-        assert s8 != null : "fx:id=\"s8\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t1 != null : "fx:id=\"t1\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t2 != null : "fx:id=\"t2\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t3 != null : "fx:id=\"t3\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t4 != null : "fx:id=\"t4\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t5 != null : "fx:id=\"t5\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t6 != null : "fx:id=\"t6\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t7 != null : "fx:id=\"t7\" was not injected: check your FXML file 'menu.fxml'.";
-        assert t8 != null : "fx:id=\"t8\" was not injected: check your FXML file 'menu.fxml'.";
+        assert a1 != null : "fx:id=\"a1\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert a2 != null : "fx:id=\"a2\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert a3 != null : "fx:id=\"a3\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert a4 != null : "fx:id=\"a4\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert a5 != null : "fx:id=\"a5\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert a6 != null : "fx:id=\"a6\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert a7 != null : "fx:id=\"a7\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert a8 != null : "fx:id=\"a8\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i1 != null : "fx:id=\"i1\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i2 != null : "fx:id=\"i2\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i3 != null : "fx:id=\"i3\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i4 != null : "fx:id=\"i4\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i5 != null : "fx:id=\"i5\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i6 != null : "fx:id=\"i6\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i7 != null : "fx:id=\"i7\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert i8 != null : "fx:id=\"i8\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p1 != null : "fx:id=\"p1\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p2 != null : "fx:id=\"p2\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p3 != null : "fx:id=\"p3\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p4 != null : "fx:id=\"p4\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p5 != null : "fx:id=\"p5\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p6 != null : "fx:id=\"p6\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p7 != null : "fx:id=\"p7\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert p8 != null : "fx:id=\"p8\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s1 != null : "fx:id=\"s1\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s2 != null : "fx:id=\"s2\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s3 != null : "fx:id=\"s3\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s4 != null : "fx:id=\"s4\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s5 != null : "fx:id=\"s5\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s6 != null : "fx:id=\"s6\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s7 != null : "fx:id=\"s7\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert s8 != null : "fx:id=\"s8\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t1 != null : "fx:id=\"t1\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t2 != null : "fx:id=\"t2\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t3 != null : "fx:id=\"t3\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t4 != null : "fx:id=\"t4\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t5 != null : "fx:id=\"t5\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t6 != null : "fx:id=\"t6\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t7 != null : "fx:id=\"t7\" was not injected: check your FXML file 'menu1.fxml'.";
+        assert t8 != null : "fx:id=\"t8\" was not injected: check your FXML file 'menu1.fxml'.";
 
     }
 

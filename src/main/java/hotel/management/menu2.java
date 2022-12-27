@@ -297,20 +297,8 @@ public class menu2 {
     }
 
     @FXML
-    void checkStatus(ActionEvent event) {
-        try
-        {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
-			String sql="select status from menu2 where id=1";
-			PreparedStatement ps = con.prepareStatement(sql);
-            ResultSet rs = ps.executeQuery();
-            q1 = rs.getInt("status");
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
+    void fetchBill(ActionEvent event) throws IOException {
+        App.setRoot("bill2");
     }
 
     @FXML
