@@ -35,10 +35,6 @@
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -47,45 +43,6 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.frame">
   <children>
-    <MenuBar VBox.vgrow="NEVER">
-      <menus>
-        <Menu mnemonicParsing="false" text="File">
-          <items>
-            <MenuItem mnemonicParsing="false" text="New" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
-          </items>
-        </Menu>
-      </menus>
-    </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Pane layoutX="75.0" layoutY="200.0" prefHeight="155.0" prefWidth="168.0">
@@ -98,12 +55,12 @@
                   <Label alignment="CENTER" layoutX="-45.0" layoutY="78.0" prefHeight="17.0" prefWidth="174.0" text="Space : 8" />
                   <Label layoutX="10.0" layoutY="122.0" prefHeight="17.0" prefWidth="56.0" text="Available" />
                   <Circle fx:id="ava3" fill="#1fff2c" layoutX="75.0" layoutY="130.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Button fx:id="ResButton3" layoutX="98.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved3" text="Reserve">
+                  <Button fx:id="ResButton3" disable="true" layoutX="98.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved3" text="Reserve">
                      <font>
                         <Font size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m3" layoutX="103.0" layoutY="118.0" mnemonicParsing="false" onAction="#menu3" text="Menu!" visible="false" />
+                  <Button fx:id="m3" disable="true" layoutX="103.0" layoutY="118.0" mnemonicParsing="false" onAction="#menu3" text="Menu!" />
                </children>
             </Pane>
             <Pane layoutX="397.0" layoutY="200.0" prefHeight="155.0" prefWidth="168.0">
@@ -116,12 +73,12 @@
                   <Label alignment="CENTER" layoutX="-38.0" layoutY="78.0" prefHeight="17.0" prefWidth="174.0" text="Space : 4" />
                   <Label layoutX="14.0" layoutY="122.0" prefHeight="17.0" prefWidth="56.0" text="Available" />
                   <Circle fx:id="ava4" fill="#1fff2c" layoutX="84.0" layoutY="131.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Button fx:id="ResButton4" layoutX="107.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved4" text="Reserve">
+                  <Button fx:id="ResButton4" disable="true" layoutX="107.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved4" text="Reserve">
                      <font>
                         <Font size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m4" layoutX="110.0" layoutY="118.0" mnemonicParsing="false" onAction="#menu4" text="Menu!" visible="false" />
+                  <Button fx:id="m4" disable="true" layoutX="110.0" layoutY="118.0" mnemonicParsing="false" onAction="#menu4" text="Menu!" />
                </children>
             </Pane>
             <Pane layoutX="75.0" layoutY="31.0" prefHeight="155.0" prefWidth="168.0">
@@ -134,17 +91,17 @@
                   <Label alignment="CENTER" layoutX="-39.0" layoutY="78.0" prefHeight="17.0" prefWidth="174.0" text="Space : 4" />
                   <Label layoutX="14.0" layoutY="118.0" prefHeight="17.0" prefWidth="56.0" text="Available" />
                   <Circle fx:id="ava1" fill="#1fff2c" layoutX="79.0" layoutY="127.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Button fx:id="ResButton1" layoutX="95.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved1" text="Reserve">
+                  <Button fx:id="ResButton1" disable="true" layoutX="95.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved1" text="Reserve">
                      <font>
                         <Font size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="m1" layoutX="99.0" layoutY="114.0" mnemonicParsing="false" onAction="#menu1" text="Menu!" visible="false" />
+                  <Button fx:id="m1" disable="true" layoutX="99.0" layoutY="114.0" mnemonicParsing="false" onAction="#menu1" text="Menu!" />
                </children>
             </Pane>
             <Pane layoutX="397.0" layoutY="31.0" prefHeight="155.0" prefWidth="168.0">
                <children>
-                  <Button fx:id="m2" layoutX="107.0" layoutY="116.0" mnemonicParsing="false" onAction="#menu2" text="Menu!" visible="false" />
+                  <Button fx:id="m2" disable="true" layoutX="107.0" layoutY="116.0" mnemonicParsing="false" onAction="#menu2" text="Menu!" />
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="6.0" prefHeight="35.0" prefWidth="174.0" text="Table-2">
                      <font>
                         <Font size="40.0" />
@@ -153,13 +110,14 @@
                   <Label alignment="CENTER" layoutX="-41.0" layoutY="78.0" prefHeight="17.0" prefWidth="174.0" text="Space : 2" />
                   <Label layoutX="17.0" layoutY="120.0" prefHeight="17.0" prefWidth="50.0" text="Available" />
                   <Circle fx:id="ava2" fill="#1fff2c" layoutX="84.0" layoutY="129.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Button fx:id="ResButton2" layoutX="104.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved2" text="Reserve">
+                  <Button fx:id="ResButton2" disable="true" layoutX="104.0" layoutY="74.0" mnemonicParsing="false" onAction="#reserved2" text="Reserve">
                      <font>
                         <Font size="12.0" />
                      </font>
                   </Button>
                </children>
             </Pane>
+            <Button layoutX="285.0" layoutY="174.0" mnemonicParsing="false" onAction="#getStatus" text="Get Status" />
       </children>
     </AnchorPane>
       <Accordion />

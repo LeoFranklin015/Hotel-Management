@@ -18,6 +18,8 @@ public class bill4 {
     Dotenv dotenv = Dotenv.load();
     final String passwd = dotenv.get("PASSWD");
 
+    int amt = 0;
+
     @FXML
     private ResourceBundle resources;
 
@@ -110,38 +112,63 @@ public class bill4 {
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item1.setText(rs.getString(2));
             price1.setText(rs.getString(3));
             qty1.setText(rs.getString(4));
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item2.setText(rs.getString(2));
             price2.setText(rs.getString(3));
             qty2.setText(rs.getString(4));
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item3.setText(rs.getString(2));
             price3.setText(rs.getString(3));
             qty3.setText(rs.getString(4));
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item4.setText(rs.getString(2));
             price4.setText(rs.getString(3));
             qty4.setText(rs.getString(4));
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item5.setText(rs.getString(2));
             price5.setText(rs.getString(3));
             qty5.setText(rs.getString(4));
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item6.setText(rs.getString(2));
             price6.setText(rs.getString(3));
             qty6.setText(rs.getString(4));
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item7.setText(rs.getString(2));
             price7.setText(rs.getString(3));
             qty7.setText(rs.getString(4));
             rs.next();
+            if(rs.getInt(4) > 0) {
+                amt += rs.getInt(3)*rs.getInt(4);
+            }
             item8.setText(rs.getString(2));
             price8.setText(rs.getString(3));
             qty8.setText(rs.getString(4));
             rs.next();
+            total.setText(Integer.toString(amt));
         }
         catch(Exception e)
         {
@@ -152,7 +179,19 @@ public class bill4 {
     @FXML
     void saveBill()
     {
-
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+            String sql="update state set status=1 where id=4";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+            App.setRoot("frame");
+        }
+        catch(Exception e1)
+        {
+            e1.printStackTrace();
+        }
     }
 
     @FXML

@@ -2,8 +2,13 @@ package hotel.management;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -12,6 +17,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 public class frame {
+
+    Dotenv dotenv = Dotenv.load();
+    final String passwd = dotenv.get("PASSWD");
 
     @FXML
     private ResourceBundle resources;
@@ -44,32 +52,156 @@ public class frame {
     private Button m4;
 
     @FXML
+    void getStatus(ActionEvent e) {
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+            String sql="select * from state";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            if(rs.getBoolean(2) == true)
+            {
+                reverse1();
+            }
+            else
+            {
+                reserved1(e);
+            }
+            rs.next();
+            if(rs.getBoolean(2) == true)
+            {
+                reverse2();
+            }
+            else
+            {
+                reserved2(e);
+            }
+            rs.next();
+            if(rs.getBoolean(2) == true)
+            {
+                reverse3();
+            }
+            else
+            {
+                reserved3(e);
+            }
+            rs.next();
+            if(rs.getBoolean(2) == true)
+            {
+                reverse4(); 
+            }
+            else
+            {
+                reserved4(e);
+            }
+        }
+        catch (Exception e1)
+        {
+            e1.printStackTrace();
+        }
+    }
+
+    @FXML
     void reserved1(ActionEvent e) {
-        ResButton1.setVisible(false);
-        ava1.setFill(Color.rgb(255,0,0));
-        m1.setVisible(true);
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+            String sql="update state set status=0 where id=1";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+            ResButton1.setDisable(true);
+            ava1.setFill(Color.rgb(255,0,0));
+            m1.setDisable(false);
+        }
+        catch(Exception e1)
+        {
+            e1.printStackTrace();
+        }
 
     }
     
+    void reverse1() {
+        ResButton1.setDisable(false);
+        ava1.setFill(Color.rgb(0,255,0));
+        m1.setDisable(true);
+    }
+
     @FXML
     void reserved2(ActionEvent e) {
-        ResButton2.setVisible(false);
-        ava2.setFill(Color.rgb(255,0,0));
-        m2.setVisible(true);
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+            String sql="update state set status=0 where id=2";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+            ResButton2.setDisable(true);
+            ava2.setFill(Color.rgb(255,0,0));
+            m2.setDisable(false);
+        }
+        catch(Exception e1)
+        {
+            e1.printStackTrace();
+        }
+    }
+
+    void reverse2() {
+        ResButton2.setDisable(false);
+        ava2.setFill(Color.rgb(0,255,0));
+        m2.setDisable(true);
     }
 
     @FXML
     void reserved3(ActionEvent e) {
-        ResButton3.setVisible(false);
-        ava3.setFill(Color.rgb(255,0,0));
-        m3.setVisible(true);
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+            String sql="update state set status=0 where id=3";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+            ResButton3.setDisable(true);
+            ava3.setFill(Color.rgb(255,0,0));
+            m3.setDisable(false);
+        }
+        catch(Exception e1)
+        {
+            e1.printStackTrace();
+        }
+    }
+
+    void reverse3() {
+        ResButton3.setDisable(false);
+        ava3.setFill(Color.rgb(0,255,0));
+        m3.setDisable(true);
     }
 
     @FXML
     void reserved4(ActionEvent e) {
-        ResButton4.setVisible(false);
-        ava4.setFill(Color.rgb(255,0,0));
-        m4.setVisible(true);
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
+            String sql="update state set status=0 where id=4";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+            ResButton4.setDisable(true);
+            ava4.setFill(Color.rgb(255,0,0));
+            m4.setDisable(false);
+        }
+        catch(Exception e1)
+        {
+            e1.printStackTrace();
+        }
+    }
+
+    void reverse4() {
+        ResButton4.setDisable(false);
+        ava4.setFill(Color.rgb(0,255,0));
+        m4.setDisable(true);
     }
 
     @FXML
