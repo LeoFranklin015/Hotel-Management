@@ -37,7 +37,7 @@ CREATE TABLE `menu1` (
 
 LOCK TABLES `menu1` WRITE;
 /*!40000 ALTER TABLE `menu1` DISABLE KEYS */;
-INSERT INTO `menu1` VALUES (1,'Chicken Pizza',200,0),(2,'Pasta',250,0),(3,'Naan(Chicken Butter Masala)',170,0),(4,'Grill Chicken (Full)',400,0),(5,'Lasagna',350,0),(6,'Chicken Briyani',250,0),(7,'Chicken Fried Rice',100,0),(8,'Momos(12 pcs) with Coke',300,0);
+INSERT INTO `menu1` VALUES (1,'Chicken Pizza',200,1),(2,'Pasta',250,1),(3,'Naan(Chicken Butter Masala)',170,2),(4,'Grill Chicken (Full)',400,0),(5,'Lasagna',350,0),(6,'Chicken Briyani',250,0),(7,'Chicken Fried Rice',100,0),(8,'Momos(12 pcs) with Coke',300,0);
 /*!40000 ALTER TABLE `menu1` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-26 10:28:27
+-- Dump completed on 2022-12-28  1:58:21

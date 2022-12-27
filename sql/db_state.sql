@@ -16,29 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `menu3`
+-- Table structure for table `state`
 --
 
-DROP TABLE IF EXISTS `menu3`;
+DROP TABLE IF EXISTS `state`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `menu3` (
-  `id` bigint NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `price` bigint NOT NULL,
-  `quantity` bigint NOT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE `state` (
+  `id` bigint DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `menu3`
+-- Dumping data for table `state`
 --
 
-LOCK TABLES `menu3` WRITE;
-/*!40000 ALTER TABLE `menu3` DISABLE KEYS */;
-INSERT INTO `menu3` VALUES (1,'Chicken Pizza',200,0),(2,'Pasta',250,0),(3,'Naan(Chicken Butter Masala)',170,0),(4,'Grill Chicken (Full)',400,0),(5,'Lasagna',350,0),(6,'Chicken Briyani',250,0),(7,'Chicken Fried Rice',100,0),(8,'Momos(12 pcs) with Coke',300,0);
-/*!40000 ALTER TABLE `menu3` ENABLE KEYS */;
+LOCK TABLES `state` WRITE;
+/*!40000 ALTER TABLE `state` DISABLE KEYS */;
+INSERT INTO `state` VALUES (1,1),(2,1),(3,1),(4,1);
+/*!40000 ALTER TABLE `state` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
