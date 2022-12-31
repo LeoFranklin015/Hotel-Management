@@ -111,6 +111,7 @@ public class bill2 {
             String sql="select * from menu2";
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
+            amt = 0;
             rs.next();
             if(rs.getInt(4) > 0) {
                 amt += rs.getInt(3)*rs.getInt(4);
@@ -185,6 +186,9 @@ public class bill2 {
 			final Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root",passwd);
             String sql="update state set status=1 where id=2";
             PreparedStatement ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+            sql = "update menu2 set quantity=0 where id";
+            ps = con.prepareStatement(sql);
             ps.executeUpdate();
             App.setRoot("frame");
         }

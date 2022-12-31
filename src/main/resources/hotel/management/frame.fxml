@@ -43,7 +43,7 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.frame">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" onMouseMoved="#getStatus" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Pane layoutX="75.0" layoutY="200.0" prefHeight="155.0" prefWidth="168.0">
                <children>
@@ -117,7 +117,6 @@
                   </Button>
                </children>
             </Pane>
-            <Button layoutX="285.0" layoutY="174.0" mnemonicParsing="false" onAction="#getStatus" text="Get Status" />
       </children>
     </AnchorPane>
       <Accordion />

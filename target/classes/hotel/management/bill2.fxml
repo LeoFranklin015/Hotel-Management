@@ -47,7 +47,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.bill2">
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="70.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="388.0" fitWidth="286.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true">
+      <ImageView fitHeight="388.0" fitWidth="286.0" layoutX="6.0" layoutY="6.0" onMouseMoved="#getBill" pickOnBounds="true">
          <image>
             <Image url="@images.jpg" />
          </image>
@@ -108,10 +108,9 @@
          </font>
       </Label>
       <Text fx:id="total" layoutX="486.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="72.0" />
-      <Button layoutX="451.0" layoutY="10.0" mnemonicParsing="false" onAction="#getBill" text="Get Bill" />
       <Button layoutX="521.0" layoutY="10.0" mnemonicParsing="false" onAction="#saveBill" text="Save Bill" />
       <Label layoutX="302.0" layoutY="14.0" text="Table 2 Bill" />
-      <Button layoutX="382.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToMenu" text="Return" />
+      <Button layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#backToMenu" text="Return" />
       <GridPane layoutX="309.0" layoutY="74.0" prefHeight="253.0" prefWidth="275.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="141.0" />

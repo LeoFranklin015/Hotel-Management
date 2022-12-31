@@ -9,10 +9,10 @@ import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 import io.github.cdimascio.dotenv.Dotenv;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
@@ -52,7 +52,7 @@ public class frame {
     private Button m4;
 
     @FXML
-    void getStatus(ActionEvent e) {
+    void getStatus(MouseEvent e) {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -67,7 +67,7 @@ public class frame {
             }
             else
             {
-                reserved1(e);
+                reserved1();
             }
             rs.next();
             if(rs.getBoolean(2) == true)
@@ -76,7 +76,7 @@ public class frame {
             }
             else
             {
-                reserved2(e);
+                reserved2();
             }
             rs.next();
             if(rs.getBoolean(2) == true)
@@ -85,7 +85,7 @@ public class frame {
             }
             else
             {
-                reserved3(e);
+                reserved3();
             }
             rs.next();
             if(rs.getBoolean(2) == true)
@@ -94,7 +94,7 @@ public class frame {
             }
             else
             {
-                reserved4(e);
+                reserved4();
             }
         }
         catch (Exception e1)
@@ -104,7 +104,7 @@ public class frame {
     }
 
     @FXML
-    void reserved1(ActionEvent e) {
+    void reserved1() {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -130,7 +130,7 @@ public class frame {
     }
 
     @FXML
-    void reserved2(ActionEvent e) {
+    void reserved2() {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -155,7 +155,7 @@ public class frame {
     }
 
     @FXML
-    void reserved3(ActionEvent e) {
+    void reserved3() {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -180,7 +180,7 @@ public class frame {
     }
 
     @FXML
-    void reserved4(ActionEvent e) {
+    void reserved4() {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -205,26 +205,26 @@ public class frame {
     }
 
     @FXML
-    void menu1(ActionEvent e) throws IOException
+    void menu1() throws IOException
     {
         App.setRoot("menu1");
 
     }
 
     @FXML
-    void menu2(ActionEvent e) throws IOException
+    void menu2() throws IOException
     {
         App.setRoot("menu2");
     }
 
     @FXML
-    void menu3(ActionEvent e) throws IOException
+    void menu3() throws IOException
     {
         App.setRoot("menu3");
     }
 
     @FXML
-    void menu4(ActionEvent e) throws IOException
+    void menu4() throws IOException
     {
         App.setRoot("menu4");
     }
