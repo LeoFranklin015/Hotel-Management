@@ -41,13 +41,13 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.frame">
+<VBox prefHeight="400.0" prefWidth="640.0" styleClass="bg" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.frame">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" onMouseMoved="#getStatus" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Pane layoutX="75.0" layoutY="200.0" prefHeight="155.0" prefWidth="168.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="14.0" prefHeight="35.0" prefWidth="174.0" text="Table-3">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="14.0" prefHeight="35.0" prefWidth="174.0" styleClass="text" text="Table-3">
                      <font>
                         <Font size="40.0" />
                      </font>
@@ -65,7 +65,7 @@
             </Pane>
             <Pane layoutX="397.0" layoutY="200.0" prefHeight="155.0" prefWidth="168.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="14.0" prefHeight="35.0" prefWidth="174.0" text="Table-4">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="14.0" prefHeight="35.0" prefWidth="174.0" styleClass="text" text="Table-4">
                      <font>
                         <Font size="40.0" />
                      </font>
@@ -83,7 +83,7 @@
             </Pane>
             <Pane layoutX="75.0" layoutY="31.0" prefHeight="155.0" prefWidth="168.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="7.0" prefHeight="35.0" prefWidth="174.0" text="Table-1">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="7.0" prefHeight="35.0" prefWidth="174.0" styleClass="text" text="Table-1">
                      <font>
                         <Font size="40.0" />
                      </font>
@@ -102,7 +102,7 @@
             <Pane layoutX="397.0" layoutY="31.0" prefHeight="155.0" prefWidth="168.0">
                <children>
                   <Button fx:id="m2" disable="true" layoutX="107.0" layoutY="116.0" mnemonicParsing="false" onAction="#menu2" text="Menu!" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="6.0" prefHeight="35.0" prefWidth="174.0" text="Table-2">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="6.0" prefHeight="35.0" prefWidth="174.0" styleClass="text" text="Table-2">
                      <font>
                         <Font size="40.0" />
                      </font>
